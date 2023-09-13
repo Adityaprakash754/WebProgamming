@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Stacking</title>
+    <style>
+        h1 {text-align: center;}
+        .dog {
+        position: absolute;
+        left: 10%; top: 10%;
+        z-index: 0;
+        }
+        .rabbit {
+        position: absolute;
+        left: 30%; top: 30%;
+        z-index: 1;
+        }
+        .horse {
+        position: absolute;
+        left: 50%; top: 50%;
+        z-index: 2;
+        }
+    </style>
+    <script>
+        var topIndex = 2;
+        function moveToTop(picture)
+        {
+        picture.style.zIndex = ++topIndex;
+        }
+        </script>
+</head>
+<body>
+    <h1>Image Overlap Demo</h1>
+    <div class="image-container">
+        <img class="dog" src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/08/gettyimages-464163411.jpg?crop=1.0xw:1xh;center,top&resize=980:*" onmouseover="moveToTop(this)" width="400" height="300">
+        <img class="horse" src="https://img.freepik.com/free-photo/white-horse-runs-beach_1340-34263.jpg?size=626&ext=jpg" onmouseover="moveToTop(this)" width="400" height="300">
+        <img class="rabbit" src="https://images.pexels.com/photos/4001296/pexels-photo-4001296.jpeg?auto=compress&cs=tinysrgb&w=800" onmouseover="moveToTop(this)" width="400" height="300">
+    </div>
+</body>
+</html>

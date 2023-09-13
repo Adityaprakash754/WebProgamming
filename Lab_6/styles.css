@@ -1,0 +1,11 @@
+form{
+    text-align: center;
+    background-image: linear-gradient(green,greenYellow) ;
+}
+h2{
+    color: red;
+}
+label, input,select,button{
+    margin: 10px;
+    margin-left: 5px;
+}

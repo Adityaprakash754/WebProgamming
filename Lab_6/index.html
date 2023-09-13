@@ -1,0 +1,78 @@
+ <!-- crreate an xhtml document that has a form for the personal details and
+ educational qualifications with the following controls
+ a text box to enter username, password, contact no and email id
+ two radio buttons to specify the gender
+ dropdown menue will allow the user to choose one value from the list
+ two checkboxes to specify hobbies -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1" xml:lang="en" lang="en">
+<head>
+    <title>Lab_2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="process.php">
+        <fieldset>
+            <h2>Personal Details</h2>
+            <label for="username">UserName: </label>
+            <input type="text" name="UserName"> 
+            <br>
+            <label for="password">PassWord: </label>
+            <input type="password"> 
+            <br>
+            <label for="email">E-mail id: </label>
+            <input type="email">
+            <br>
+            <label for="Gender">Gender: </label>
+            <input type="radio" name="Gender" value="Male">
+            <label for="Gender">Male</label>
+            <input type="radio" name="Gender" value="Female">
+            <label for="Gender">Female</label>
+            <br>
+            <label for="contact">Contact: </label>
+            <input type="text">
+            <br>
+
+            <h2>Educational Qualification</h2>
+            <label for="degree">Degree: </label>
+            <select name="degree" id="degree" >
+                <option value="1">--Select Option--</option>
+                <option value="2">Bachelor</option>
+                <option value="3">Masters</option>
+                <option value="4">Phd</option>
+            </select>
+            <br>
+            <label for="engg">Engineering: </label>
+            <select name="engg" id="engg" >
+                <option value="1">--Select Option--</option>
+                <option value="2">CSE</option>
+                <option value="3">ISE</option>
+                <option value="4">ECE</option>
+                <option value="5">CIV</option>
+                <option value="6">ME</option>
+            </select>
+            <br>
+            <label for="hobbies">Hobbies: </label>
+            <input type="checkbox" name="hobbies" id="1">
+            <label for="hobbies">Playing Chess</label>
+            <input type="checkbox" name="hobbies" id="2">
+            <label for="hobbies">Reading Books</label>
+            <br>
+
+            <h2>Address</h2>
+            <textarea name="address" id="1" cols="50" rows="5"></textarea>
+            <br>
+
+            <label for="resume">Attach Resume: </label>
+            <input type="file" placeholder="Choose a file">
+            <br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
